@@ -7,7 +7,7 @@ public class Funktsioonid1{
 	}
 	//Tehke funktsiooniga sentimeetrid tollideks
 	public static void main(String[] args){
-		System.out.println(tollideks(10));
+		System.out.println(tollideks(11));
 		System.out.println(tollideks(10));
 		if(args.length>0){
 			double t=Double.parseDouble(args[0]);
