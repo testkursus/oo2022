@@ -4,6 +4,8 @@ public class Kilpkonn{
 	public String toString(){
 		return "Kilpkonn ("+x+", "+y+", suund "+suund+")";
 	}
+	public int kysiX(){return x;}
+	public int kysiY(){return y;}
 	public void edasi(){
 	  if(suund==0){x++;}
 	  if(suund==1){y++;}

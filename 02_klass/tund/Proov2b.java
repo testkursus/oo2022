@@ -7,5 +7,6 @@ public class Proov2b{
 		  if(juhis.charAt(i)=='e'){k1.edasi();} else {k1.keera();}
 		  System.out.println(k1);			
 		}
+		System.out.println(k1.kysiX());
 	}
 }
