@@ -6,7 +6,9 @@ public class Proov2{
 		punased.lisaMangija(m1);
 		punased.lisaMangija(m2);
 		System.out.println(punased);
+		System.out.println(punased.lahim(5, 20));
 		punased.liigu(3);
 		System.out.println(punased);
+		System.out.println(punased.lahim(5, 20));
 	}
 }

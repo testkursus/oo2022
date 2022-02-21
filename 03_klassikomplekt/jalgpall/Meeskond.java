@@ -17,6 +17,19 @@ public class Meeskond{
 			m.liigu(sek);
 		}
 	}
+	public Mangija lahim(double px, double py){
+		//Eeldan, et, esimene mängija on lähim
+		//Vaatan kõik mängijad läbi
+		//Kui leian lähema mängija, määran tema lähimaks
+		//Tagastan funktsioonist mängija
+		Mangija v=mangijad.get(0);
+		for(Mangija m: mangijad){
+			if(m.kaugus(px, py)<v.kaugus(px, py)){
+				v=m;
+			}
+		}
+		return v;
+	}
 }
 //Looge prooviprogramm meeskonna ja kahe mängijaga selles
 //Kuvage mängijate andmed praegu
