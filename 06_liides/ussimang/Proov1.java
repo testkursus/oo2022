@@ -22,6 +22,7 @@ public class Proov1{
 				if(rida.charAt(0)=='p'){mt.paremale();}
 				if(rida.charAt(0)=='y'){mt.yles();}
 				if(rida.charAt(0)=='a'){mt.alla();}
+				
 			}
 		}
 	}

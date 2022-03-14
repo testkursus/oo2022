@@ -10,7 +10,12 @@ public class ManguTuum1 implements ManguTuum{
 		if(suund=='v'){peaX--;}
 		if(suund=='p'){peaX++;}
 		if(suund=='y'){peaY++;}
-		if(suund=='a'){peaY--;}		
+		if(suund=='a'){peaY--;}	
+         //Kui olen jõudnud õunani, siis viska õun uude juhuslikku kohta
+         //+ kui toimib		
+        if(peaX==ounX && peaY==ounY){
+			ounaleJuhuslikKoht();
+		}		 
 	}
 	public int[][] ussiKohad(){return new int[][]{{peaX, peaY}};}
 	public int[] ounaKoht(){

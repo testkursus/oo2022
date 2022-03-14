@@ -6,7 +6,8 @@ public class TuumaKaivitaja{
 		 new Timer().scheduleAtFixedRate(new TimerTask(){
 			 public void run(){
 				 kaivitatav.samm();
-				 System.out.println(Arrays.deepToString(kaivitatav.ussiKohad()));
+				 System.out.println(Arrays.deepToString(kaivitatav.ussiKohad())+
+				   " "+Arrays.toString(kaivitatav.ounaKoht()));
 			 }
 		 }, 0, 2000);
     }
