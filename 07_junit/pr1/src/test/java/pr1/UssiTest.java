@@ -21,4 +21,19 @@ public class UssiTest{
 		assertEquals(0, kohad[0][1]);
 		//Kohandage oma klassi nõnda, et test läheks läbi
 	}
+	@Test public void testLiikumine(){
+		tuum.yles();
+		tuum.samm();
+		tuum.samm();
+		tuum.vasakule();
+		tuum.samm();
+	    int[][] kohad=tuum.ussiKohad();
+		assertEquals(-1, kohad[0][0]);
+		assertEquals(2, kohad[0][1]);
+	    tuum.alla();
+		tuum.samm();
+	    kohad=tuum.ussiKohad();
+		assertEquals(-1, kohad[0][0]);
+		assertEquals(1, kohad[0][1]);
+	}
 } 
