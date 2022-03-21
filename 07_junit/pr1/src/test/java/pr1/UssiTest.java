@@ -13,4 +13,12 @@ public class UssiTest{
 		assertEquals(0, kohad[0][0]);
 		assertEquals(0, kohad[0][1]);
 	}
+	@Test public void testParemale(){
+		tuum.paremale();
+		tuum.samm();
+		int[][] kohad=tuum.ussiKohad();
+		assertEquals(1, kohad[0][0]);
+		assertEquals(0, kohad[0][1]);
+		//Kohandage oma klassi nõnda, et test läheks läbi
+	}
 } 
