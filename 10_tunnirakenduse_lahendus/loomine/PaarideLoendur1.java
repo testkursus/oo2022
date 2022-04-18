@@ -15,4 +15,15 @@ public class PaarideLoendur1<T extends Comparable<T> >{
 	   }
 	   eelmine=element;
 	}
+	List<Map.Entry<SamaTyypiPaar<T>, Integer> > jarjestatud(){
+		List<Map.Entry<SamaTyypiPaar<T>, Integer> > abi=
+		   new ArrayList<>(loendur.entrySet());
+		Collections.sort(abi, new Comparator<Map.Entry<SamaTyypiPaar<T>, Integer> >(){
+			public int compare(Map.Entry<SamaTyypiPaar<T>, Integer> vorreldav1, 
+			                     Map.Entry<SamaTyypiPaar<T>, Integer> vorreldav2){
+				return vorreldav2.getValue()-vorreldav1.getValue();
+			}
+		});
+		return abi;
+	}
 }
